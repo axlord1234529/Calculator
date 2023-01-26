@@ -1,5 +1,5 @@
 # Teszt
-Kalmár Sándor
+## Kalmár Sándor 
 Éretségi pont kalkulátor.
 
 A teszt megoldását és a Calculator használatát a test.php file on belül lehet látni.
