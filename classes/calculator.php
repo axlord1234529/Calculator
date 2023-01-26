@@ -116,53 +116,6 @@ class Calculator
 
         $basePoints = ($mandatorySubjectResult + $bestFreeSubjectResult) * 2;
 
-
-        $pointsFromLanguageExams = 0;
-        /*
-        if($excessPoints < 100)
-        {
-            for ($i = 0; $i < count($this->languageExams) ; $i++ )
-            {
-                if (get_class($this->languageExams[$i]) == LanguageExam::TYPE_B2)
-                {
-                    $exam_c2 = 0;
-                    for ($j = $i+1; $j < count($this->languageExams) ; $j++)
-                    {
-                        if($this->languageExams[$i]->equals($this->languageExams[$j]))
-                        {
-                            if ($this->languageExams[$i]->getPoints() < $this->languageExams[j]->getPoints())
-                            {
-                                $exam_c2 += $this->languageExams[j]->getPoints();
-                            }
-                        }
-                    }
-                    for ($j = $i-1; $j >= 0 ; $j--)
-                    {
-                        if($this->languageExams[$i]->equals($this->languageExams[$j]))
-                        {
-                            if ($this->languageExams[$i]->getPoints() < $this->languageExams[j]->getPoints())
-                            {
-                                $exam_c2 += $this->languageExams[j]->getPoints();
-                            }
-                        }
-                    }
-                    if($exam_c2 > 0)
-                    {
-                        $pointsFromLanguageExams += $exam_c2;
-                    }else{
-                        $pointsFromLanguageExams += $this->languageExams[$i]->getPoints();
-                    }
-
-                }
-                else
-                {
-                    $pointsFromLanguageExams += $this->languageExams[$i]->getPoints();
-                }
-
-            }
-        }
-        */
-
         $excessPoints += $this->getPointsFromLanguageExams($excessPoints);
         if($excessPoints > 100) $excessPoints = 100;
 

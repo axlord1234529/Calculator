@@ -18,6 +18,9 @@ class Major
         $this->mandatorySubject = $mandatorySubject;
     }
 
+    /*
+     * Igazal tér vissza ha jelentkező megfelel a szak tárgyi követelményeinek
+     */
     public function canApply(array $subjects) : bool
     {
         $inputMandatorySubject = Subject::findInArray($subjects,$this->mandatorySubject);
