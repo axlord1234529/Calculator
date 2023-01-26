@@ -1,6 +1,6 @@
 # Teszt
 ## Kalmár Sándor 
-Éretségi pont kalkulátor.
+Érettségi pont kalkulátor.
 
 A teszt megoldását és a Calculator használatát a test.php file on belül lehet látni.
 Local szerveren böngészőben lehet futtatni.
