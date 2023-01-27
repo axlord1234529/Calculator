@@ -48,7 +48,7 @@ $exampleData = [
     ],
 ];
 // output: 476 (376 alappont + 100 többletpont)
-$exampleData = [
+$exampleData1 = [
     'valasztott-szak' => [
         'egyetem' => 'ELTE',
         'kar' => 'IK',
@@ -186,6 +186,6 @@ $exampleData3 = [
     ],
 ];
 
-$calculator = new Calculator($exampleData);
+$calculator = new Calculator($exampleData1);
 echo $calculator->calculate();
 

@@ -111,7 +111,7 @@ class Calculator
             }
         }
 
-        asort($freeSubjectResults);
+        rsort($freeSubjectResults);
         $bestFreeSubjectResult = array_shift($freeSubjectResults);
 
         $basePoints = ($mandatorySubjectResult + $bestFreeSubjectResult) * 2;
