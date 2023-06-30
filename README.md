@@ -1,4 +1,4 @@
-# Teszt
+# Calculator
 ## Kalmár Sándor 
 Érettségi pont kalkulátor. <br/>
 A feladat leírása a feladat.pdf fájlban található. <br/>
